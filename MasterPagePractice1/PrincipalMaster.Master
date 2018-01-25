@@ -11,10 +11,19 @@
 <body>
     <form id="form1" runat="server">
     <div>
+        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+            <Items>
+                <asp:MenuItem Text="Inicio" Value="inicio"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Principal.aspx" Text="Principal" Value="principal"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        <br />
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
-    </div>
+        <br />
+        <br />
+        derechos de autor 2018&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UPI</div>
     </form>
 </body>
 </html>
